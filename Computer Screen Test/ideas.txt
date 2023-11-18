@@ -1,3 +1,0 @@
-actual working clock using dynamic sprites
-"apps"-mods that can be made by anyone and "installed to the computer"
-app icons
