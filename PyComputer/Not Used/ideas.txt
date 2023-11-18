@@ -1,0 +1,8 @@
+O actual working clock using dynamic sprites
+O "apps"-mods that can be made by anyone and "installed to the computer"
+app icons
+O custom cursor
+O boot options (safe mode with no mods)
+startup sequence
+save configs to mod folders
+convert previous projects to computer mods

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PyEngine module &mdash; PyEngine Beta documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=c5864913"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="PyEngine" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            PyEngine
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">PyEngine</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">PyEngine module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#PyEngine.GameButton"><code class="docutils literal notranslate"><span class="pre">GameButton</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#PyEngine.GameButton.listen"><code class="docutils literal notranslate"><span class="pre">GameButton.listen()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#PyEngine.GameButton.listenPulse"><code class="docutils literal notranslate"><span class="pre">GameButton.listenPulse()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#PyEngine.GameButton.show"><code class="docutils literal notranslate"><span class="pre">GameButton.show()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#PyEngine.Message"><code class="docutils literal notranslate"><span class="pre">Message</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#PyEngine.Message.listen"><code class="docutils literal notranslate"><span class="pre">Message.listen()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#PyEngine.Message.send"><code class="docutils literal notranslate"><span class="pre">Message.send()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#PyEngine.Message.unsend"><code class="docutils literal notranslate"><span class="pre">Message.unsend()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#PyEngine.Vector2"><code class="docutils literal notranslate"><span class="pre">Vector2</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#PyEngine.Vector2.translate"><code class="docutils literal notranslate"><span class="pre">Vector2.translate()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#PyEngine.animation"><code class="docutils literal notranslate"><span class="pre">animation()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#PyEngine.checkHover"><code class="docutils literal notranslate"><span class="pre">checkHover()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#PyEngine.listenAll"><code class="docutils literal notranslate"><span class="pre">listenAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#PyEngine.listenPulseAll"><code class="docutils literal notranslate"><span class="pre">listenPulseAll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#PyEngine.load"><code class="docutils literal notranslate"><span class="pre">load()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#PyEngine.loadMods"><code class="docutils literal notranslate"><span class="pre">loadMods()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#PyEngine.save"><code class="docutils literal notranslate"><span class="pre">save()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#PyEngine.staticImage"><code class="docutils literal notranslate"><span class="pre">staticImage</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#PyEngine.staticImage.show"><code class="docutils literal notranslate"><span class="pre">staticImage.show()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#PyEngine.wasdInput"><code class="docutils literal notranslate"><span class="pre">wasdInput()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PyEngine</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">PyEngine</a></li>
+      <li class="breadcrumb-item active">PyEngine module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/PyEngine.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-PyEngine">
+<span id="pyengine-module"></span><h1>PyEngine module<a class="headerlink" href="#module-PyEngine" title="Link to this heading"></a></h1>
+<p>Game Engine for Python. Requires Pygame.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="PyEngine.GameButton">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">PyEngine.</span></span><span class="sig-name descname"><span class="pre">GameButton</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">notHoverSprite</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Surface</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hover</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">active</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hoverSprite</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Surface</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imageRes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Defaults\\DEFAULTBUTTON.png'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imageResX</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imageResY</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#PyEngine.Message" title="PyEngine.Message"><span class="pre">Message</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#PyEngine.GameButton" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Create a button that can trigger a function if clicked on or a message is recieved (if one is provided)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="PyEngine.GameButton.listen">
+<span class="sig-name descname"><span class="pre">listen</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PyEngine.GameButton.listen" title="Link to this definition"></a></dt>
+<dd><p>Listens for clicks on the button. Should be in a loop.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PyEngine.GameButton.listenPulse">
+<span class="sig-name descname"><span class="pre">listenPulse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PyEngine.GameButton.listenPulse" title="Link to this definition"></a></dt>
+<dd><p>Listens for hover once. Should NOT be used in a loop. Useful for controllers.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PyEngine.GameButton.show">
+<span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#PyEngine.GameButton.show" title="Link to this definition"></a></dt>
+<dd><p>Blit button to screen. Screen to blit to required. Requires defined image</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="PyEngine.Message">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">PyEngine.</span></span><span class="sig-name descname"><span class="pre">Message</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#PyEngine.Message" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Creates a message that can be sent and recieved</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="PyEngine.Message.listen">
+<span class="sig-name descname"><span class="pre">listen</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PyEngine.Message.listen" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PyEngine.Message.send">
+<span class="sig-name descname"><span class="pre">send</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PyEngine.Message.send" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="PyEngine.Message.unsend">
+<span class="sig-name descname"><span class="pre">unsend</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PyEngine.Message.unsend" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="PyEngine.Vector2">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">PyEngine.</span></span><span class="sig-name descname"><span class="pre">Vector2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#PyEngine.Vector2" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="PyEngine.Vector2.translate">
+<span class="sig-name descname"><span class="pre">translate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#PyEngine.Vector2.translate" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="PyEngine.animation">
+<span class="sig-prename descclassname"><span class="pre">PyEngine.</span></span><span class="sig-name descname"><span class="pre">animation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">moveList</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fps</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frames</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">screen</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#PyEngine.animation" title="Link to this definition"></a></dt>
+<dd><p>Pygame animation.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="PyEngine.checkHover">
+<span class="sig-prename descclassname"><span class="pre">PyEngine.</span></span><span class="sig-name descname"><span class="pre">checkHover</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">function</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#PyEngine.checkHover" title="Link to this definition"></a></dt>
+<dd><p>Runs a function if mouse is in given area</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="PyEngine.listenAll">
+<span class="sig-prename descclassname"><span class="pre">PyEngine.</span></span><span class="sig-name descname"><span class="pre">listenAll</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PyEngine.listenAll" title="Link to this definition"></a></dt>
+<dd><p>Listen on all created buttons at once</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="PyEngine.listenPulseAll">
+<span class="sig-prename descclassname"><span class="pre">PyEngine.</span></span><span class="sig-name descname"><span class="pre">listenPulseAll</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#PyEngine.listenPulseAll" title="Link to this definition"></a></dt>
+<dd><p>Listen pulse on all created buttons at once</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="PyEngine.load">
+<span class="sig-prename descclassname"><span class="pre">PyEngine.</span></span><span class="sig-name descname"><span class="pre">load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">saveFile</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#PyEngine.load" title="Link to this definition"></a></dt>
+<dd><p>Load a dictionary of variables from a json file and return it</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="PyEngine.loadMods">
+<span class="sig-prename descclassname"><span class="pre">PyEngine.</span></span><span class="sig-name descname"><span class="pre">loadMods</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">modDir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loadingScreen</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Surface</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">screen</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Surface</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#PyEngine.loadMods" title="Link to this definition"></a></dt>
+<dd><p>Load mods in given directory. Returns list of loaded mods as Module objects. The folder containing each mod’s files must start with an uppercase letter and the .py file must be the same name but lowercase.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="PyEngine.save">
+<span class="sig-prename descclassname"><span class="pre">PyEngine.</span></span><span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">saveFile</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#PyEngine.save" title="Link to this definition"></a></dt>
+<dd><p>Save a dictionary of variables to a json file</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="PyEngine.staticImage">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">PyEngine.</span></span><span class="sig-name descname"><span class="pre">staticImage</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#PyEngine.staticImage" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Static Graphic that doesn’t move. Requires x,y and image</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="PyEngine.staticImage.show">
+<span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">screen</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#PyEngine.staticImage.show" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="PyEngine.wasdInput">
+<span class="sig-prename descclassname"><span class="pre">PyEngine.</span></span><span class="sig-name descname"><span class="pre">wasdInput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">WFunction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">AFunction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">SFunction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">DFunction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#PyEngine.wasdInput" title="Link to this definition"></a></dt>
+<dd><p>Simple WASD/arrow keys input listener. Also supports arrow keys. Args are functions to run when respective key is pressed</p>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="modules.html" class="btn btn-neutral float-left" title="PyEngine" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Jaden909.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
